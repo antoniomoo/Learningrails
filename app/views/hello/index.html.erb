@@ -1,0 +1,19 @@
+<h1><%= @message %></h1>
+
+<h1>Por fin llego a esta mierda</h1>
+
+<p>for in</p>
+<% for i in 1..@count %>
+	<p><%= @bonus %></p>
+<% end %>
+
+<p>times do</p>
+<% @count.times do %>
+	<p><%= @bonus %></p>
+<% end %>
+
+<p>times do, con llaves "{}"</p>
+<% @count.times { %>
+<p><%= @bonus %></p>
+<% } %>
+
